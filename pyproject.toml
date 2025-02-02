@@ -5,10 +5,12 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pip-app"
+name = "dajngo-utils"
 version = "0.1"
 description = "Template para Python Package"
-dependencies = []
+dependencies = [
+    "django>=5",
+]
 readme = "README.md"
 requires-python = ">= 3.10"
 authors = [
@@ -30,4 +32,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/dudustefanello/pip_app/"
+Homepage = "https://github.com/dudustefanello/djang_utils/"

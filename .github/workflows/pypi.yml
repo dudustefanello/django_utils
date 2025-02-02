@@ -1,4 +1,4 @@
-name: Upload Python Package - Private
+name: Upload Package
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1.10.1
       with:
-        repository-url: https://pip.stefanello.cc/
+        repository-url: https://pypi.stefanello.cc/
         user: dudustefanello
-        password: ${{ secrets.PYPI_API_TOKEN_PRIVATE }}
+        password: ${{ secrets.PYPI_PASS }}
         skip-existing: true
