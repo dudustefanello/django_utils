@@ -5,7 +5,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dajngo-utils"
+name = "django-utils"
 version = "0.1"
 description = "Template para Python Package"
 dependencies = [
@@ -32,4 +32,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/dudustefanello/djang_utils/"
+Homepage = "https://github.com/dudustefanello/django_utils/"
