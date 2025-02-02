@@ -1,0 +1,19 @@
+{
+    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "docker-in-docker": "latest"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions"
+            ],
+            "settings": {
+                "files.exclude": {
+                    ".idea": true
+                }   
+            }
+        }
+    }
+}
