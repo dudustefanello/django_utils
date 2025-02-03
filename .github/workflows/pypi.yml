@@ -3,6 +3,7 @@ name: Upload Package
 on:
   push:
     branches: [main]
+    paths: ['**.toml']
 
 permissions:
   contents: read

@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'django_utils.healthcheck',
+    'django_utils.models',
 ]
 
 ROOT_URLCONF = 'tests.urls'

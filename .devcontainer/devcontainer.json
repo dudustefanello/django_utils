@@ -1,18 +1,21 @@
 {
-    "image":"mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-        "docker-in-docker": "latest"
-    },
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "customizations": {
         "vscode": {
             "extensions": [
-                "github.vscode-github-actions"
+                "github.vscode-github-actions",
+                "ms-python.python"
             ],
             "settings": {
                 "files.exclude": {
                     ".idea": true
-                }   
+                }
             }
         }
-    }
+    },
+    "containerEnv": {
+        "PYPI_USER": "${{ secrets.PYPI_USER }}",
+        "PYPI_PASS": "${{ secrets.PYPI_PASS }}"
+    },
+    "postCreateCommand": "pip install --extra-index-url https://$PYPI_USER:$PYPI_PASS@pypi.stefanello.cc/simple/ ."
 }

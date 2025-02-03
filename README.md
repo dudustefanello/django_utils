@@ -19,3 +19,9 @@ Pra utilizar no docker:
     timeout: 10s
     retries: 3
 ```
+
+## Models
+
+Implementa classes base para models:
+
+- **BaseModel**: Com data de criação e alteração e definição de classe Meta
