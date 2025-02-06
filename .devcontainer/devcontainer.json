@@ -4,7 +4,10 @@
         "vscode": {
             "extensions": [
                 "github.vscode-github-actions",
-                "ms-python.python"
+                "ms-python.python",
+                "tamasfe.even-better-toml",
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
             ],
             "settings": {
                 "files.exclude": {
