@@ -19,10 +19,11 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'django_utils.healthcheck',
-    'django_utils.models',
+    'django_utils.protectmedia',
 ]
 
 ROOT_URLCONF = 'tests.urls'
+LOGIN_URL = '/login/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -70,6 +71,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
 
 MEDIA_ROOT = BASE_DIR / 'mediafiles/'
 

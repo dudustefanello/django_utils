@@ -25,3 +25,20 @@ Pra utilizar no docker:
 Implementa classes base para models:
 
 - **BaseModel**: Com data de criação e alteração e definição de classe Meta
+
+## Protect Media
+
+Implementa uma view para redirecionar para uma `internal` `location` do Nginx com o header `X-Accel-Redirect` para `/protected/`
+
+```py
+urlpatterns = [
+  path('media/<path:path>/', protected_serve, {'document_root': settings.MEDIA_ROOT}),
+]
+```
+
+```nginx
+location /protected/ {
+  internal;
+  alias /path/para/mediafiles/;
+}
+```
