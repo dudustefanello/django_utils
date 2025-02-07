@@ -1,1 +1,1 @@
-from models.models import Model, Meta
+from .models import Model, Meta

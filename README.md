@@ -3,7 +3,7 @@
 Algumas utilidades para meus projetos Django
 
 ```shell
-pip install --index-url https://pypi.stefanello.cc/simple/ django-utils
+pip install -U --index-url https://pypi.stefanello.cc/simple/ django-utils
 ```
 
 ## Health Check
