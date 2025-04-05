@@ -4,7 +4,7 @@ registries:
   pip-stefanello:
     type: python-index
     url: https://pypi.stefanello.cc/simple/
-    username: ${{ secrets.PYPI_USER }}
+    username: dudustefanello
     password: ${{ secrets.PYPI_PASS }}
 
 updates:
