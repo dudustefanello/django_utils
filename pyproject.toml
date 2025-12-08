@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-utils"
-version = "2.2.1"
+version = "2.2.2"
 description = "Python Package para Django"
 dependencies = [
     "django>=5",
